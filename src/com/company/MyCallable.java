@@ -3,8 +3,8 @@ package com.company;
 import java.util.concurrent.Callable;
 
 public class MyCallable implements Callable<Integer> {
-    int timeToSleep;
-    int numOfTask;
+    private final int timeToSleep;
+    private final int numOfTask;
 
     public MyCallable(int timeToSleep, int numOfTask) {
         this.timeToSleep = timeToSleep;
